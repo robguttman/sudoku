@@ -1,8 +1,8 @@
 import time
 import unittest
 
-from sudoku.solver import solve
-from sudoku.board import Board
+from solver import solve
+from board import Board
 
 
 class BoardTests(unittest.TestCase):
@@ -54,6 +54,22 @@ class BoardTests(unittest.TestCase):
             . . . | 4 . . | 6 . .
         """
         self.solve(cells)
+    
+#    def test_solve__impossible(self):
+#        cells = """
+#            . . . | . . 5 | . 8 . 
+#            . . . | 6 . 1 | . 4 3 
+#            . . . | . . . | . . . 
+#            ------+-------+------
+#            . 1 . | 5 . . | . . . 
+#            . . . | 1 . 6 | . . . 
+#            3 . . | . . . | . . 5 
+#            ------+-------+------
+#            5 3 . | . . . | . 6 1 
+#            . . . | . . . | . . 4 
+#            . . . | . . . | . . .
+#        """
+#        self.solve(cells)
     
     def solve(self, cells):
         board = Board(cells)

@@ -1,6 +1,6 @@
 import re
 
-from sudoku.cell import Cell
+from cell import Cell
 
 
 class Board:

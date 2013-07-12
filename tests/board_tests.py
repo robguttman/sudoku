@@ -1,7 +1,7 @@
 import unittest
 
-from sudoku.cell import Cell
-from sudoku.board import Board
+from cell import Cell
+from board import Board
 
 
 class BoardTests(unittest.TestCase):
