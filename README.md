@@ -5,7 +5,7 @@ As I sat in the runway for a delayed takeoff, I decided to fill my time with som
 
 This code is the result of that exercise.  It ended up taking me the return flight to finish the bulk of it.  I modeled the problem as a constraint satisfaction problem - which is actually how I solved the first one manually.
 
-After completing my solution I researched other approaches and it turns out that mine closely matches [Peter Norvig's](http://norvig.com/sudoku.html) including variable ordering - a performance optimization technique for these types of constraint satisfaction and related AI planning problems.  However, Norvig's solution had some additional optimizations which I then adopted, particularly pre-computing peers.
+After completing my solution I researched other approaches and it turns out that mine closely matches [Peter Norvig's](http://norvig.com/sudoku.html) including variable ordering - a performance optimization technique for constraint satisfaction problems.  However, Norvig's solution had some additional optimizations which I then adopted, particularly pre-computing peers.
 
 to run
 ------
