@@ -1,9 +1,8 @@
 class Cell:
     
     def __init__(self, value=None):
-        self.values = [value] if value is not None else range(1,10)
+        self.values = [value] if value else range(1,10)
         self.options = []
-        self.choice = 0
     
     @property
     def value(self):
